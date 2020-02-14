@@ -1,0 +1,7 @@
+name: 'TravisCI'
+description: 'Try to run .travis.yml commands'
+runs:
+  using: docker
+  image: docker.pkg.github.com/silverstripe/cow/master:latest
+  args:
+    - 'php --version'
